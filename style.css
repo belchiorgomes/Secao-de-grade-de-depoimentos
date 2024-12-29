@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--Light-grayish-blue);
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: grid;
+    grid-template-columns: 375px;
+    grid-auto-rows: auto;
+    place-content: center;
+}
+
+#container > .cards{
+    width: 375px;
+    background-color: var(--cor);
+    border-radius: 2rem;
+    padding: 2.4rem;
+}
