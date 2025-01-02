@@ -32,7 +32,7 @@ body{
     width: 375px;
     margin: 2rem auto;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 375px;
     grid-auto-rows: auto;
     place-content: center;
     gap: 1rem;
@@ -90,10 +90,11 @@ body{
     margin-block-end: 1.6rem;
 }
 
-@media (width > 1440px) {
+@media (width > 775px) {
     #container{
         width: 100%;
-        grid-template-columns: repeat(4, 1fr);
+        /*grid-template-columns: repeat(4, 1fr);*/
+        grid-template-columns: repeat(auto-fit, 1fr);
         grid-template-areas: "box01 box01 box02 box05"
                              "box03 box04 box04 box05";
     }
